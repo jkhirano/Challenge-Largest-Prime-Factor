@@ -14,8 +14,6 @@ exports.largestPrimeFactor = function(n) {
     return n !== 1;
   }
 
-  // ^ Note: i needs to start from 2. If it starts at 1, it will always be prime.
-
   //find factors:
   for (let i = 1; i <= Math.floor(Math.sqrt(n)); i++) {
     if (n % i === 0) {
